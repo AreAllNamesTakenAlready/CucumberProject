@@ -1,4 +1,4 @@
-package steps;
+package test.java;
 
 import java.io.IOException;
 import java.util.Properties;

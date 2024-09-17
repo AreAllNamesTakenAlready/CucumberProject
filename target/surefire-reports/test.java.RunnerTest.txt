@@ -1,0 +1,9 @@
+-------------------------------------------------------------------------------
+Test set: test.java.RunnerTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 2.049 s <<< FAILURE! - in test.java.RunnerTest
+Test feature for Rest Assured - Reqres.Reqres POST request #3  Time elapsed: 1.373 s  <<< ERROR!
+com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: 
+Unrecognized field "Country" (class POJO.Root), not marked as ignorable (3 known properties: "Description", "Region", "Countries"])
+ at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 6, column: 25] (through reference chain: POJO.Root["Countries"]->java.util.ArrayList[0]->POJO.Root["Country"])
+

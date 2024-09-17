@@ -1,9 +1,10 @@
-package steps;
+package test.java;
 
 import io.cucumber.java.en.Given;
 import pages.HerokuAppPage;
 
 public class Heroku_stepdefinitions {
+//	BasePage base = new BasePage();
 
 	HerokuAppPage hero = new HerokuAppPage();
 

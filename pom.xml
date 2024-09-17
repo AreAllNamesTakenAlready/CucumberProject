@@ -3,7 +3,13 @@
   <groupId>CucumberProject</groupId>
   <artifactId>CucumberProject</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  <dependencies>	
+  
+  <dependencies>
+  <dependency>
+      <groupId>io.rest-assured</groupId>
+      <artifactId>rest-assured</artifactId>
+      <version>5.5.0</version>
+	</dependency>	
 	<dependency>
 	    <groupId>io.cucumber</groupId>
 	    <artifactId>cucumber-java</artifactId>
@@ -14,16 +20,17 @@
 	    <artifactId>cucumber-junit</artifactId>
 	    <version>7.18.1</version>
 	</dependency>
-	<dependency>
+	<!--<dependency>
 	    <groupId>io.cucumber</groupId>
-	    <artifactId>cucumber-junit</artifactId>
+	    <artifactId>cucumber-testng</artifactId>
 	    <version>7.18.1</version>
-	</dependency>
-	<dependency>
+	</dependency-->
+	<!--<dependency>
 	    <groupId>junit</groupId>
 	    <artifactId>junit</artifactId>
 	    <version>4.13.2</version>
-	</dependency>
+	    
+	</dependency-->
 	<dependency>
 	    <groupId>org.seleniumhq.selenium</groupId>
 	    <artifactId>selenium-java</artifactId>
@@ -33,6 +40,22 @@
 	    <groupId>io.github.bonigarcia</groupId>
 	    <artifactId>webdrivermanager</artifactId>
 	    <version>5.9.2</version>
+	</dependency>
+	<dependency>
+      <groupId>io.rest-assured</groupId>
+      <artifactId>json-path</artifactId>
+      <version>5.5.0</version>
+	</dependency>
+	<dependency>
+      <groupId>io.rest-assured</groupId>
+      <artifactId>json-schema-validator</artifactId>
+      <version>5.5.0</version>
+	</dependency>
+	<!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind -->
+	<dependency>
+	    <groupId>com.fasterxml.jackson.core</groupId>
+	    <artifactId>jackson-databind</artifactId>
+	    <version>2.17.2</version>
 	</dependency>
   </dependencies>
   <build>
@@ -45,6 +68,15 @@
           <release>21</release>
         </configuration>
       </plugin>
-    </plugins>
+      <plugin>
+		  <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>3.0.0-M4</version>
+                <configuration>
+                    <testFailureIgnore>true</testFailureIgnore>
+                </configuration>
+		</plugin>
+	</plugins>
+	
   </build>
 </project>

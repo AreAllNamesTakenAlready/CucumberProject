@@ -1,4 +1,4 @@
-package steps;
+package test.java;
 
 import org.junit.Assert;
 

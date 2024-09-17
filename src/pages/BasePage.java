@@ -5,8 +5,8 @@ import java.util.Properties;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 
-import steps.Hooks;
 import support.GenericUtil;
+import test.java.Hooks;
 
 public class BasePage extends GenericUtil {
 	WebDriver driver;
