@@ -5,11 +5,15 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import support.ScreenShotManager;
+
 public class GooglePage extends BasePage {
 
 	public GooglePage() {
 		PageFactory.initElements(driver, this);
 	}
+
+	ScreenShotManager screen = new ScreenShotManager(driver);
 
 	final String googleURL = "https://www.google.com/";
 
@@ -32,10 +36,12 @@ public class GooglePage extends BasePage {
 	public void searchGoogle(String searchData) {
 		googleSearch.sendKeys(searchData);
 		googleSearch.sendKeys(Keys.ENTER);
+		screen.takeFullPageScreenshot("Google_Search_Page");
 	}
 
 	public String getINRPriceGoogle() {
 		String rate = inrPriceGoogle.getAttribute("data-exchange-rate").split("\\.")[0];
+		screen.takeElementScreenshot(inrPriceGoogle);
 		return rate;
 	}
 

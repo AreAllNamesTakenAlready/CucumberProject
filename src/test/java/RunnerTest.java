@@ -7,6 +7,6 @@ import io.cucumber.junit.Cucumber;
 @RunWith(Cucumber.class)
 @io.cucumber.junit.CucumberOptions(features = "src/test/resources/features", glue = "", monochrome = true, plugin = {
 		"pretty", "html:target/cucumber-reports/report.html",
-		"json:target/cucumber-reports/cucumber.json" }, tags = "@JSON-Parse")
+		"json:target/cucumber-reports/cucumber.json" }, tags = "@Google")
 public class RunnerTest {
 }

@@ -8,6 +8,8 @@ import org.openqa.selenium.support.PageFactory;
 import support.GenericUtil;
 import test.java.Hooks;
 
+// used for common driver instance across all pages
+// can be used for sharing page objects
 public class BasePage extends GenericUtil {
 	WebDriver driver;
 	Properties prop;

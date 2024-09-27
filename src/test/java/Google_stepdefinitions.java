@@ -30,8 +30,9 @@ public class Google_stepdefinitions {
 		dollarXE = page.getINRPriceXE();
 	}
 
-	@Then("Verify dollar price is same for both site")
+	@Then("Verify dollar price is same for both sites")
 	public void verify_dollar_price_is_same_for_both_site() {
+		// Assert.fail("Failed the test to test screenshots");
 		Assert.assertEquals(dollarG, dollarXE);
 	}
 
