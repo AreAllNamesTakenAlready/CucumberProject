@@ -48,9 +48,9 @@ public class DriverManager {
 				options.addArguments("--headless=new");
 			}
 			// Handling timeouts using manage()
-//			driver.manage().timeouts().scriptTimeout(Timeouts.SCRIPT_TIMEOUT);
-//			driver.manage().timeouts().pageLoadTimeout(Timeouts.PAGELOAD_TIMEOUT);
-//			driver.manage().timeouts().implicitlyWait(Timeouts.IMPLICIT_WAIT_TIMEOUT);
+			// driver.manage().timeouts().scriptTimeout(Timeouts.SCRIPT_TIMEOUT);
+			// driver.manage().timeouts().pageLoadTimeout(Timeouts.PAGELOAD_TIMEOUT);
+			// driver.manage().timeouts().implicitlyWait(Timeouts.IMPLICIT_WAIT_TIMEOUT);
 
 			// Handling Timeouts using ChromeOptions
 			options.setScriptTimeout(Timeouts.SCRIPT_TIMEOUT);

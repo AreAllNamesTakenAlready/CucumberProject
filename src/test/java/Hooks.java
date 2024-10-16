@@ -43,6 +43,7 @@ public class Hooks {
 		if (scenario.isFailed()) {
 			screen = new ScreenShotManager(driver);
 			scenario.attach(screen.screenshotForReport(), "image/png", "screenshot");
+			scenario.log("");
 		}
 	}
 

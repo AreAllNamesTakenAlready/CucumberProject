@@ -33,6 +33,7 @@ public class GenericUtil {
 	public void selectDropDown(WebElement element, String visibleText) {
 		Select sel = new Select(element);
 		sel.selectByVisibleText(visibleText);
+		element.click();
 	}
 
 	protected void staticWait(long a) {
